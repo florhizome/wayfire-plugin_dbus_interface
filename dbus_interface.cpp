@@ -564,10 +564,10 @@ class dbus_interface_t
 #endif
 
             GVariant* signal_data;
-            wf::view_change_viewport_signal* signal;
+            wf::view_change_workspace_signal* signal;
             wayfire_view view;
 
-            signal = static_cast<wf::view_change_viewport_signal*> (data);
+            signal = static_cast<wf::view_change_workspace_signal*> (data);
             view = signal->view;
 
             if (!check_view_toplevel) {
