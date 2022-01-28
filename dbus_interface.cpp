@@ -88,7 +88,7 @@ class dbus_interface_t
 
             output->connect_signal("view-resize-request", &output_view_resizing);
 
-            output->connect_signal("view-change-viewport", &view_workspaces_changed);
+            output->connect_signal("view-change-workspace", &view_workspaces_changed);
 
             output->connect_signal("workspace-changed", &output_workspace_changed);
 
